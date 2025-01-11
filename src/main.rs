@@ -1,3 +1,7 @@
 fn main() {
-    println!("Hello, world!");
+    let languages = vec![
+        String::from("rust"),
+        String::from("go"),
+        String::from("typescript"),
+    ];
 }
