@@ -12,6 +12,16 @@ fn next_language<'a>(languages: &'a [String], current: &str) -> &'a str {
 
     languages.last().unwrap()
 }
+fn last_language(languages: &[String]) -> &str {
+    languages.last().unwrap()
+}
+fn longest_language(lang_a: &str, lang_b: &str) -> &str {
+    if lang_a.len() >= lang_b.len() {
+        lang_a
+    } else {
+        lang_b
+    }
+}
 fn main() {
     let languages = vec![
         String::from("rust"),
